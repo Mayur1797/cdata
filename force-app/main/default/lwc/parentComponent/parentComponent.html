@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="parent to child communication ">
+        <div class="slds-var-m-around-medium">
+            <lightning-input type="text" label="Enter some percentage"
+            onkeyup={changeHandler}
+            value={percentage}>
+            </lightning-input>
+            <c-progress-component progress-value={percentage}>
+              
+            </c-progress-component>
+        </div>
+    </lightning-card>
+    <lightning-button variant="brand-outline" label="Slider Reset" 
+     onclick={handleClick} ></lightning-button>
+    <c-slider-component></c-slider-component>
+</template>
